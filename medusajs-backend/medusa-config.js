@@ -72,6 +72,31 @@ const plugins = [
       },
     },
   },
+
+  {
+    resolve : `medusa-payment-stripe`,
+    options : {
+      api_key: process.env.STRIPE_API_KEY,
+      webhook_secret:process.env.STRIPE_WEBHOOK_SECRET,
+    },
+  },
+  {
+    resolve: `medusa-taxes-stripe`,
+    options:{
+      stripeApiKey: process.env.STRIPE_API_KEY,
+      webhookSecret: process.env.STRIPE_WEBHOOK_SECRET
+    }
+  },
+  // {
+  //   resolve: `medusa-custom-attributes`,
+  //   options: {
+  //     enableUI: true,
+  //     projectConfig: {
+  //       store_cors: STORE_CORS,
+  //       admin_cors: ADMIN_CORS,
+  //     }
+  //   }
+  // },
 ];
 
 const modules = {
@@ -97,7 +122,7 @@ const projectConfig = {
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
   // Uncomment the following lines to enable REDIS
-  redis_url: REDIS_URL
+  // redis_url: REDIS_URL
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule} */

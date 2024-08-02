@@ -1,3 +1,4 @@
+const { hostname } = require('os')
 const { withStoreConfig } = require('./store-config')
 const store = require('./store.config.json')
 
@@ -10,8 +11,32 @@ const nextConfig = withStoreConfig({
   images: {
     remotePatterns: [
       {
+        protocol:'http',
+        hostname:'tailwindui.com'
+      },
+      {
+        protocol:'https',
+        hostname:'tailwindui.com'
+      },
+      {
+        protocol:'http',
+        hostname:'anvogue.vercel.app'
+      },
+      {
+        protocol:'https',
+        hostname: 'anvogue.vercel.app'
+      },
+      {
         protocol: 'http',
         hostname: 'res.cloudinary.com',
+      },
+      {
+        protocol: 'http',
+        hostname:'images.unsplash.com'
+      },
+      {
+        protocol: 'https',
+        hostname:'images.unsplash.com'
       },
       {
         protocol: 'https',
@@ -28,6 +53,10 @@ const nextConfig = withStoreConfig({
       {
         protocol: 'http',
         hostname: 'localhost',
+      },
+      {
+        protocol: 'https',
+        hostname:'asset.cloudinary.com'
       },
       {
         protocol: 'https',
