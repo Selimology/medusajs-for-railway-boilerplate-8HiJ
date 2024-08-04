@@ -19,6 +19,7 @@ import {
 } from "@headlessui/react"
 import { classNames } from "@lib/util/classnames"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
+import Image from "next/image"
 
 interface NavContainerProps {
   children: React.ReactNode
@@ -180,7 +181,7 @@ export default function NavContainer({
               {/* Logo */}
               <LocalizedClientLink href="#" className="flex">
                 <span className="sr-only">JewelleryGBShop</span>
-                <img
+                <Image
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                   alt=""

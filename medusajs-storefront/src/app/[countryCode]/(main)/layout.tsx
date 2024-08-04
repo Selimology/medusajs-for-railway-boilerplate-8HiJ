@@ -1,7 +1,6 @@
 import { Metadata } from "next"
 
 import Footer from "@modules/layout/templates/footer"
-import Nav from "@modules/layout/templates/nav"
 import footerData from "@lib/data/json/Footer.json"
 import topBannerdata from "@lib/data/json/TopBanner.json"
 import navigationData from "@lib/data/json/Navigation.json"

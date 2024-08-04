@@ -16,6 +16,7 @@ import { UserIcon, XMarkIcon } from "@heroicons/react/24/outline"
 import { NavigationDataType } from "types/navbar"
 import NavbarActionsRight from "../navbar-actions-right"
 import { classNames } from "@lib/util/classnames"
+import Image from "next/image"
 
 interface Props {
   navigation: NavigationDataType
@@ -96,9 +97,11 @@ export default function MobileMenu({ navigation, open, setOpen }: Props) {
                               className="group relative text-sm"
                             >
                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                <img
+                                <Image
                                   src={item.imageSrc}
                                   alt={item.imageAlt}
+                                  width={32}
+                                  height={32}
                                   className="object-cover object-center"
                                 />
                               </div>
