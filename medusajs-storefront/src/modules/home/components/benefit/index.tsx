@@ -20,8 +20,10 @@ const Benefit = ({ data }: Props) => {
                   className={`${benefit.icon} flex flex-col items-center justify-center lg:text-7xl text-5xl`}
                 ></i>
 
-                <div className="text-center mt-5">{benefit.title}</div>
-                <div className="text-center mt-3">{benefit.description}</div>
+                <div className="text-center mt-5 heading6">{benefit.title}</div>
+                <div className="text-center mt-3 caption1 text-secondary">
+                  {benefit.description}
+                </div>
               </div>
             ))}
           </div>
