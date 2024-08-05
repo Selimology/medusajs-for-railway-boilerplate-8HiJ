@@ -183,6 +183,8 @@ export default function NavContainer({
                 <span className="sr-only">JewelleryGBShop</span>
                 <Image
                   className="h-8 w-auto"
+                  height={32}
+                  width={32}
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                   alt=""
                 />

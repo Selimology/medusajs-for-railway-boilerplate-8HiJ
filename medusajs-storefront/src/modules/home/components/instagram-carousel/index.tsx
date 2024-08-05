@@ -22,7 +22,7 @@ const InstagramCarousel = ({ proofData, instagramHeaderdata }: Props) => {
               {instagramHeaderdata.title}
             </div>
             <div className="text-center mt-3">
-              {instagramHeaderdata.description}
+              #{instagramHeaderdata.description}
             </div>
           </div>
         </div>
