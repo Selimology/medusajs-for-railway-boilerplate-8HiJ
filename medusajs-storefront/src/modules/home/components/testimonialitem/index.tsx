@@ -14,7 +14,7 @@ const TestimonialItem: React.FC<TestimonialProps> = ({ data }) => {
           <div className="text-button-uppercase text-secondary mt-4">
             Customer Reviews
           </div>
-          <div className="heading4 normal-case desc font-normal mt-2">
+          <div className="testimonialDescription font-normal normal-case desc  mt-2">
             {data.description}
           </div>
           <div className="text-button name mt-4">{data.name}</div>

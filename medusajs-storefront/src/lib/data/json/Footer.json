@@ -75,18 +75,13 @@
     "social": [
       {
         "name": "Facebook",
-        "href": "#",
+        "href": "https://www.facebook.com/JewelleryGBShop",
         "icon": "FaFacebook"
       },
       {
         "name": "Instagram",
-        "href": "#",
+        "href": "https://www.instagram.com/jewellerygbshop/",
         "icon": "FaInstagram"
-      },
-      {
-        "name": "Pinterest",
-        "href": "#",
-        "icon": "FaPinterest"
       }
     ]
   }

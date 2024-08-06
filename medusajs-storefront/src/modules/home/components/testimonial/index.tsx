@@ -32,7 +32,7 @@ const Testimonial: React.FC<Props> = ({ data, limit, shopLinkdata }) => {
               slidesPerView={1}
               navigation
               modules={[Navigation, Autoplay]}
-              className="h-full"
+              className="h-full "
               onSlideChange={handleSlideChange}
             >
               {data.slice(0, limit).map((prd) => (
@@ -53,10 +53,10 @@ const Testimonial: React.FC<Props> = ({ data, limit, shopLinkdata }) => {
               >
                 <Image
                   src={prd.avatar}
-                  width={1000}
-                  height={700}
+                  width={500}
+                  height={500}
                   alt={prd.name}
-                  className="avatar w-full h-full object-cover"
+                  className="avatar w-full h-12 object-cover"
                 />
               </div>
             ))}

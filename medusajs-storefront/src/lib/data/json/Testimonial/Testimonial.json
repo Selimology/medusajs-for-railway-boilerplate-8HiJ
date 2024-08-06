@@ -1,181 +1,88 @@
 [
     {
         "id": "1",
-        "category": "fashion",
-        "title": "Variety of Styles!",
-        "name": "Fukuda E.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 10, 2023",
-        "address": "Tokyo, Japan",
-        "description": "Anvouge's exceptional customer service and attention to detail make shopping with them a pleasure. They understand my fashion needs and help me find the perfect pieces every time.",
+        "category": "necklace",
+        "title": "Gold Personalized Necklace for Emma",
+        "name": "Rachel",
+        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1722921926/3_pjjabd.jpg",
+        "date": "July 7, 2024",
+        "address": "United Kingdom",
+        "description": "Made a great gift! Matched the description exactly. Very well made and packaged. Would definitely recommend :)",
         "images": [
-            "https://anvogue.vercel.app/_next/image?url=%2Fimages%2Favatar%2F1.png&w=2048&q=75"
+            "https://res.cloudinary.com/djoki7czl/image/upload/v1722921926/3_pjjabd.jpg"
+        ],
+        "star": 5
+    },
+
+    {
+        "id": "2",
+        "category": "necklace",
+        "title": "Gold Personalized Necklace",
+        "name": "Charlie",
+        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1722921656/2_nhipbg.jpg",
+        "date": "July 11, 2024",
+        "address": "United Kingdom",
+        "description": "Brought it as a birthday gift, as very pleased with it and hope it will be well received. Excellent value for money and delivered promptly",
+        "images": [
+            "https://res.cloudinary.com/djoki7czl/image/upload/v1722921656/2_nhipbg.jpg"
+        ],
+        "star": 5
+    },
+    {
+        "id": "3",
+        "category": "necklace",
+        "title": "925 Sterling Silver Necklace",
+        "name": "Emma",
+        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1722921529/1_lxvtqm.jpg",
+        "date": "July 21, 2024",
+        "address": "United Kingdom",
+        "description": "I ordered a custom necklace and the comms were great, and I can’t wait to wear my beautiful jewellery!",
+        "images": [
+            "https://res.cloudinary.com/djoki7czl/image/upload/v1722921529/1_lxvtqm.jpg"
         ],
         "star": 5,
         "buttonLink":"#",
         "buttonText":"Shop from this store"
     },
     {
-        "id": "2",
-        "category": "fashion",
-        "title": "Quality of Clothing!",
-        "name": "Georgina S.",
-        "avatar": "https://anvogue.vercel.app/_next/image?url=%2Fimages%2Favatar%2F1.png&w=2048&q=75",
-        "date": "November 11, 2023",
-        "address": "Madrid, Spain",
-        "description": "I absolutely love this shop! The products are high-quality and the customer service is excellent. I always leave with exactly what I need and a smile on my face.",
-        "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
-        ],
-        "star": 5
-    },
-    {
-        "id": "3",
-        "category": "fashion",
-        "title": "Customer Service!",
-        "name": "Elizabeth A.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 13, 2023",
-        "address": "Manchester, UK",
-        "description": "I love this shop! The products are always top-quality, and the staff is incredibly friendly and helpful. They go out of their way to make sure that I'm satisfied with my purchase.",
-        "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
-        ],
-        "star": 4
-    },
-    {
         "id": "4",
-        "category": "fashion",
-        "title": "Quality of Clothing!",
-        "name": "Christin H.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 15, 2023",
-        "address": "California, USA",
-        "description": "I can't get enough of Anvouge's high-quality clothing. It's comfortable, stylish, and always on-trend. The products are high-quality and the customer service is excellent.",
+        "category": "ring",
+        "title": "Gold Personalized Ring for Wesley",
+        "name": "Wesley",
+        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/a_vflip/v1722922103/4_axnpha.jpg",
+        "date": "Jun 24, 2024",
+        "address": "Ireland",
+        "description": "I had a special request, which was handled very well. Customer contact went smoothly and without me having placed the order, they sent me an example via WhatsApp so that I could see what it could look like. Very happy with the result!",
         "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
+            "https://res.cloudinary.com/djoki7czl/image/upload/a_vflip/v1722922103/4_axnpha.jpg"
         ],
         "star": 5
     },
     {
         "id": "5",
-        "category": "fashion",
-        "title": "Customer Service!",
-        "name": "Emily G.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 18, 2023",
-        "address": "Paris, France",
-        "description": "Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
+        "category": "cufflinks",
+        "title": "Personalized Cufflinks",
+        "name": "Anthony Edward Ancell",
+        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1722922335/5_h4o5do.jpg",
+        "date": "Jun 25, 2024",
+        "address": "France",
+        "description": "Item arrived on time and as shown in the photo, the seller's availability is truly top notch... I will definitely buy more",
         "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
+            "https://res.cloudinary.com/djoki7czl/image/upload/v1722922335/5_h4o5do.jpg"
         ],
-        "star": 4
+        "star": 5
     },
     {
         "id": "6",
-        "category": "fashion",
-        "title": "Variety of Styles!",
-        "name": "Carolina C.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 19, 2023",
-        "address": "London, UK",
-        "description": "Anvouge's fashion collection is a game-changer! Their unique and trendy pieces have completely transformed my style. It's comfortable, stylish, and always on-trend.",
+        "category": "necklace",
+        "title": "Personalized Necklace for Dayana",
+        "name": "Dayana Dimitrova",
+        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1722922625/6_tm0pnw.jpg",
+        "date": "Jun 13, 2024",
+        "address": "United Kingdom",
+        "description": "Quick despatch time. Very helpful seller. The item itself is amazing. I bought a necklace for myself and now 2+ years later still haven’t changed or broke therefore I decided to order one for my mum and best friend. So happy with the final products + bonus they arrived in lovely little boxes. Will definitely use again !!",
         "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
-        ],
-        "star": 5
-    },
-    {
-        "id": "7",
-        "category": "yoga",
-        "title": "Quality of Clothing!",
-        "name": "Christin H.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 15, 2023",
-        "address": "California, USA",
-        "description": "Their unique and trendy pieces have completely transformed my style.",
-        "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
-        ],
-        "star": 5
-    },
-    {
-        "id": "8",
-        "category": "yoga",
-        "title": "Customer Service!",
-        "name": "Emily G.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 18, 2023",
-        "address": "Paris, France",
-        "description": "Exceptional customer service and attention to detail make shopping with them a pleasure",
-        "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
-        ],
-        "star": 5
-    },
-    {
-        "id": "9",
-        "category": "yoga",
-        "title": "Variety of Styles!",
-        "name": "Carolina C.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 19, 2023",
-        "address": "London, UK",
-        "description": "I can't get enough of Anvogue high-quality clothing. It's comfortable, stylish, and always on-trend.",
-        "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
-        ],
-        "star": 4
-    },
-    {
-        "id": "10",
-        "category": "yoga",
-        "title": "Variety of Styles!",
-        "name": "Fukuda E.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 10, 2023",
-        "address": "Tokyo, Japan",
-        "description": "Exceptional customer service and attention to detail make shopping with them a pleasure",
-        "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
-        ],
-        "star": 4
-    },
-    {
-        "id": "11",
-        "category": "yoga",
-        "title": "Quality of Clothing!",
-        "name": "Georgina S.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 11, 2023",
-        "address": "Madrid, Spain",
-        "description": "I love this shop! The products are high-quality, the customer service is excellent",
-        "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
-        ],
-        "star": 5
-    },
-    {
-        "id": "12",
-        "category": "yoga",
-        "title": "Customer Service!",
-        "name": "Elizabeth A.",
-        "avatar": "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-        "date": "November 13, 2023",
-        "address": "Manchester, UK",
-        "description": "The products are always top-quality, and the staff is incredibly friendly and helpful",
-        "images": [
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg",
-            "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
+            "https://res.cloudinary.com/djoki7czl/image/upload/v1722922625/6_tm0pnw.jpg"
         ],
         "star": 5
     }
