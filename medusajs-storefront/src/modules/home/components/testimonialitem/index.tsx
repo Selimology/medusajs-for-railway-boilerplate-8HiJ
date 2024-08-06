@@ -8,15 +8,17 @@ interface TestimonialProps {
 const TestimonialItem: React.FC<TestimonialProps> = ({ data }) => {
   return (
     <>
-      <div className="testimonial-item style-six h-full">
+      <div className="testimonial-item style-four h-full">
         <div className="testimonial-main h-full">
           <Rate currentRate={data.star} size={14} />
-          <div className="mt-4"> Customer Reviews</div>
-          <div className="normal-case font-normal mt-2">{data.description}</div>
-          <div className="flex items-center gap-3 mt-4">
-            <div>{data.name}</div>
-            <div>From {data.address}</div>
+          <div className="text-button-uppercase text-secondary mt-4">
+            Customer Reviews
           </div>
+          <div className="heading4 normal-case desc font-normal mt-2">
+            {data.description}
+          </div>
+          <div className="text-button name mt-4">{data.name}</div>
+          <div className="caption2 text-secondary2 date">{data.address}</div>
         </div>
       </div>
     </>

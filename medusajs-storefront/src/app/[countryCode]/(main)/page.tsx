@@ -147,7 +147,7 @@ export default async function Home({
     return null
   }
 
-  const targetDate = new Date("2024-07-28")
+  const targetDate = new Date("2024-09-28")
 
   return (
     <>

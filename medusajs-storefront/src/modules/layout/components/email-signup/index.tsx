@@ -69,7 +69,7 @@ const EmailSignUp = () => {
         />
         <button
           type="submit"
-          className=" bg-black text-white py-4 px-10 rounded-lg outline-none hover:cursor-pointer hover:bg-[#e3c454] absolute top-1 bottom-1 right-1 flex items-center justify-center"
+          className=" bg-black text-white py-4 px-10 rounded-lg outline-none hover:cursor-pointer hover:text-black hover:font-bold hover:bg-[#e3c454] absolute top-1 bottom-1 right-1 flex items-center justify-center"
         >
           Subscribe
         </button>

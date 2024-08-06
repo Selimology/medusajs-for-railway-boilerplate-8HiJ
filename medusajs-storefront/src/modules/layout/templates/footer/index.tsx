@@ -33,12 +33,12 @@ export default function Footer({
                 src={
                   "https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
                 }
-                width="48"
-                height="48"
+                width={82}
+                height={82}
                 alt="Logo"
               />
               {/* Logo Text */}
-              {logoText}
+              <span className="heading6">{logoText}</span>
             </a>
 
             {/* Description Text */}
@@ -48,14 +48,16 @@ export default function Footer({
             <ul className="flex mt-5 space-x-8">
               {social.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href}>{item.icon && icons[item.icon]}</a>
+                  <a className="text-2xl" href={item.href}>
+                    {item.icon && icons[item.icon]}
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
           {/* First Column */}
           <div className="lg:mx-auto">
-            <h3 className="mb-4 mt-3 flex uppercase items-center">
+            <h3 className=" text-button-uppercase mb-4 mt-3 flex uppercase items-center">
               {companyInformation.title}
             </h3>
             <ul role="list">
@@ -63,7 +65,7 @@ export default function Footer({
                 <li key={item.name} className="mb-4">
                   <LocalizedClientLink
                     href={item.href}
-                    className=" text-black leading text-sm"
+                    className=" text-black leading text-sm caption1 has-line-before duration-300"
                   >
                     {item.name}
                   </LocalizedClientLink>
@@ -73,7 +75,7 @@ export default function Footer({
           </div>
           {/* Second Row */}
           <div className="lg:mx-auto">
-            <h3 className="mb-4 mt-3 flex uppercase items-center">
+            <h3 className="mb-4 mt-3 flex uppercase items-center text-button-uppercase">
               {customerCare.title}
             </h3>
             <ul role="list">
@@ -81,7 +83,7 @@ export default function Footer({
                 <li key={item.name} className="mb-4">
                   <LocalizedClientLink
                     href={item.href}
-                    className=" text-black leading text-sm"
+                    className=" text-black leading caption1 has-line-before duration-300 text-sm"
                   >
                     {item.name}
                   </LocalizedClientLink>
@@ -91,7 +93,7 @@ export default function Footer({
           </div>
           {/* Third Row */}
           <div className="lg:mx-auto">
-            <h3 className="mb-4 mt-3 flex uppercase items-center">
+            <h3 className="mb-4 mt-3 flex uppercase items-center text-button-uppercase">
               {tips.title}
             </h3>
             <ul role="list">
@@ -99,7 +101,7 @@ export default function Footer({
                 <li key={item.name} className="mb-4">
                   <LocalizedClientLink
                     href={item.href}
-                    className=" text-black leading text-sm"
+                    className=" text-black caption1 has-line-before duration-300 leading text-sm"
                   >
                     {item.name}
                   </LocalizedClientLink>
@@ -110,9 +112,9 @@ export default function Footer({
         </div>
         {/* Bottom of Footer */}
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <span className="block text-center ">
+        <span className="block text-center copyright caption1 text-secondary">
           &copy; 2021 - {new Date().getFullYear()}{" "}
-          <a href="#" className="hover:underline">
+          <a href="#" className=" has-line-before duration-300">
             {logoText}
           </a>{" "}
           . All Rights Reserved.
