@@ -1,17 +1,12 @@
 {
-    "slogan": "New customers save 10% with the code GET10",
-    "slides":[
-        {
-            "id": 1,
-            "bannerText":"Get 10% off on selected items"
-        },
-        {
-            "id":2,
-            "bannerText": "Free shipping on all orders over $50"
-        },
-        {
-            "id":3,
-            "bannerText":"10% off on all summer essentials!"
-        }
+    "banners": [
+      "Get 10% off on selected items",
+      "New customers save 10% with the code GET10",
+      "10% off swim suits",
+      "Free shipping on all orders over $50",
+      "10% off on all summer essentials!",
+      "Get summer-ready: 10% off swim suits",
+      "10% off on all products"
     ]
-}
+  }
+  

@@ -20,6 +20,7 @@ import {
 import { classNames } from "@lib/util/classnames"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 
 interface NavContainerProps {
   children: React.ReactNode
@@ -31,7 +32,11 @@ export default function NavContainer({
   navigation,
 }: NavContainerProps) {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+  const parts = pathname.split("/").filter(Boolean)
+  const restOfPath = "/" + parts.slice(1).join("/")
 
+  console.log({ pathname, restOfPath })
   return (
     <>
       <MobileMenu navigation={navigation} open={open} setOpen={setOpen} />
@@ -43,7 +48,7 @@ export default function NavContainer({
           className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
         >
           <div>
-            <div className="flex h-16  items-center justify-between">
+            <div className="flex h-32  items-center justify-between">
               <div className="flex flex-1 items-center lg:hidden">
                 <button
                   type="button"
@@ -66,9 +71,9 @@ export default function NavContainer({
                             <PopoverButton
                               className={classNames(
                                 open
-                                  ? "border-indigo-600 text-indigo-600 outline-none"
-                                  : "border-transparent outline-none text-gray-700 hover:text-gray-800",
-                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                                  ? "border-[#e3c454] text-black outline-none text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 "
+                                  : "border-transparent outline-none  text-black text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 ",
+                                "hover:text-[#e3c454] relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                               )}
                             >
                               {category.name}
@@ -167,13 +172,15 @@ export default function NavContainer({
                   ))}
 
                   {navigation.pages.map((page) => (
-                    <a
+                    <LocalizedClientLink
                       key={page.name}
                       href={page.href}
-                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                      className={` flex items-center text-button-uppercase transition-colors duration 200 ease-out hover:text-[#e3c454]
+                        ${restOfPath === page.href ? "text-[#e3c454] " : ""}
+                        `}
                     >
                       {page.name}
-                    </a>
+                    </LocalizedClientLink>
                   ))}
                 </div>
               </PopoverGroup>
@@ -182,10 +189,10 @@ export default function NavContainer({
               <LocalizedClientLink href="#" className="flex">
                 <span className="sr-only">JewelleryGBShop</span>
                 <Image
-                  className="h-8 w-auto"
-                  height={32}
-                  width={32}
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  className="h-28 w-auto"
+                  height={90}
+                  width={90}
+                  src="https://res.cloudinary.com/djoki7czl/image/upload/v1717346704/karf3jyynrnqfvdeqkrn.svg"
                   alt=""
                 />
               </LocalizedClientLink>

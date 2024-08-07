@@ -28,7 +28,7 @@ const Hero = ({ heroSlides }: HeroProp) => {
             <SwiperSlide key={index}>
               <div className="slider-item h-full w-full relative overflow-hidden">
                 <div className="container w-full h-full flex items-center relative">
-                  <div className="text-content basis-1/2">
+                  <div className="text-content basis-1/2 z-10">
                     <div className="text-sub-display">
                       {slide.subDisplayText}
                     </div>
@@ -37,12 +37,12 @@ const Hero = ({ heroSlides }: HeroProp) => {
                     </div>
                     <LocalizedClientLink
                       href={slide.linkHref}
-                      className="button-main md:mt-8 mt-3"
+                      className="button-main md:mt-8 mt-3 z-20 relative"
                     >
                       Shop Now
                     </LocalizedClientLink>
                   </div>
-                  <div className={`sub-img absolute ${slide.imageClasses}`}>
+                  <div className={`sub-img absolute ${slide.imageClasses} z-0`}>
                     <Image
                       src={slide.imageSrc}
                       width={slide.imageWidth}

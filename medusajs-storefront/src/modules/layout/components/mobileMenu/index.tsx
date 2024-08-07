@@ -17,6 +17,7 @@ import { NavigationDataType } from "types/navbar"
 import NavbarActionsRight from "../navbar-actions-right"
 import { classNames } from "@lib/util/classnames"
 import Image from "next/image"
+import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 interface Props {
   navigation: NavigationDataType
@@ -105,7 +106,7 @@ export default function MobileMenu({ navigation, open, setOpen }: Props) {
                                   className="object-cover object-center"
                                 />
                               </div>
-                              <a
+                              <LocalizedClientLink
                                 href={item.href}
                                 className="mt-6 block font-medium text-gray-900"
                               >
@@ -114,7 +115,7 @@ export default function MobileMenu({ navigation, open, setOpen }: Props) {
                                   aria-hidden="true"
                                 />
                                 {item.name}
-                              </a>
+                              </LocalizedClientLink>
                               <p aria-hidden="true" className="mt-1">
                                 Shop now
                               </p>
@@ -136,12 +137,12 @@ export default function MobileMenu({ navigation, open, setOpen }: Props) {
                             >
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
-                                  <a
+                                  <LocalizedClientLink
                                     href={item.href}
                                     className="-m-2 block p-2 text-gray-500"
                                   >
                                     {item.name}
-                                  </a>
+                                  </LocalizedClientLink>
                                 </li>
                               ))}
                             </ul>
@@ -155,32 +156,32 @@ export default function MobileMenu({ navigation, open, setOpen }: Props) {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <a
+                      <LocalizedClientLink
                         href={page.href}
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
                         {page.name}
-                      </a>
+                      </LocalizedClientLink>
                     </div>
                   ))}
                 </div>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
-                    <a
+                    <LocalizedClientLink
                       href="#"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Sign in
-                    </a>
+                    </LocalizedClientLink>
                   </div>
                   <div className="flow-root">
-                    <a
+                    <LocalizedClientLink
                       href="#"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Create account
-                    </a>
+                    </LocalizedClientLink>
                   </div>
                 </div>
 

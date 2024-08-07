@@ -2,7 +2,7 @@
     {
       "subDisplayText": "Sale! Up To 50% Off!",
       "displayText": "Summer Sale Collections",
-      "linkHref": "/shop/breadcrumb-img",
+      "linkHref": "/shop",
       "imageSrc": "/images/slider/bg6-1.png",
       "imageAlt": "bg6-1",
       "imageWidth": 2000,
@@ -12,7 +12,7 @@
     {
       "subDisplayText": "Sale! Up To 50% Off!",
       "displayText": "Fashion for Every Occasion",
-      "linkHref": "/shop/breadcrumb-img",
+      "linkHref": "/shop",
       "imageSrc": "/images/slider/bg6-2.png",
       "imageAlt": "bg6-2",
       "imageWidth": 2000,
@@ -22,7 +22,7 @@
     {
       "subDisplayText": "Sale! Up To 50% Off!",
       "displayText": "Stylish Looks for Any Season",
-      "linkHref": "/shop/breadcrumb-img",
+      "linkHref": "/shop",
       "imageSrc": "/images/slider/bg6-3.png",
       "imageAlt": "bg6-3",
       "imageWidth": 2000,
