@@ -4,6 +4,7 @@ import { formatAmount } from "@lib/util/prices"
 
 import ChevronDown from "@modules/common/icons/chevron-down"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
+import Breadcrumb from "@modules/home/components/breadcrumb"
 
 type OverviewProps = {
   customer: Omit<Customer, "password_hash"> | null

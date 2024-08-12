@@ -1,5 +1,6 @@
 import { getCustomer } from "@lib/data"
 import AccountLayout from "@modules/account/templates/account-layout"
+import Breadcrumb from "@modules/home/components/breadcrumb"
 
 export default async function AccountPageLayout({
   dashboard,
@@ -11,8 +12,16 @@ export default async function AccountPageLayout({
   const customer = await getCustomer().catch(() => null)
 
   return (
-    <AccountLayout customer={customer}>
-      {customer ? dashboard : login}
-    </AccountLayout>
+    <>
+      {customer ? (
+        <Breadcrumb heading="My Account" subHeading="My Account" />
+      ) : (
+        <Breadcrumb heading="Login" subHeading="Login" />
+      )}
+
+      <AccountLayout customer={customer}>
+        {customer ? dashboard : login}
+      </AccountLayout>
+    </>
   )
 }

@@ -1,4 +1,5 @@
 const dotenv = require("dotenv");
+const { hostname } = require("os");
 
 let ENV_FILE_NAME = "";
 switch (process.env.NODE_ENV) {
@@ -42,6 +43,8 @@ const ADMIN_APP_PORT = process.env.PORT || 7001;
 
 const fileServicePlugin = cloudinaryConfigured
   ? {
+
+
     resolve: `medusa-file-cloudinary`,
     options: {
       cloud_name: CLOUDINARY_CLOUD_NAME,
@@ -87,6 +90,17 @@ const plugins = [
       webhookSecret: process.env.STRIPE_WEBHOOK_SECRET
     }
   },
+  // {
+  //       resolve: `medusa-file-spaces`,
+  //       options: {
+  //           spaces_url: process.env.SPACE_URL,
+  //           bucket: process.env.SPACE_BUCKET,
+  //           region: process.env.SPACE_REGION,
+  //           endpoint: process.env.SPACE_ENDPOINT,
+  //           access_key_id: process.env.SPACE_ACCESS_KEY_ID,
+  //           secret_access_key: process.env.SPACE_SECRET_ACCESS_KEY,
+  //       },
+  // },
   // {
   //   resolve: `medusa-custom-attributes`,
   //   options: {

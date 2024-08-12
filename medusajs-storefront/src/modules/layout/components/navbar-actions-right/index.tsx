@@ -6,6 +6,7 @@ import {
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import { Suspense } from "react"
 import CartButton from "../cart-button"
+import * as Icon from "@phosphor-icons/react/dist/ssr"
 
 export default function NavbarActionsRight() {
   return (
@@ -13,23 +14,31 @@ export default function NavbarActionsRight() {
       <div className="flex flex-1 items-center justify-end">
         {/* Search */}
         {process.env.FEATURE_SEARCH_ENABLED && (
-          <LocalizedClientLink
-            className="ml-6 hidden p-2 text-gray-400 hover:text-gray-500 lg:block"
-            href="/search"
-            scroll={false}
-          >
-            <span className="sr-only">Search</span>
-            <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true" />
-          </LocalizedClientLink>
+          <>
+            <LocalizedClientLink
+              className="ml-6 hidden p-2 search-icon cursor-pointer lg:block"
+              href="/search"
+              scroll={false}
+            >
+              <span className="sr-only">Search</span>
+              <Icon.MagnifyingGlass
+                size={24}
+                color="black"
+                aria-hidden="true"
+              />
+            </LocalizedClientLink>
+
+            <div className="line absolute bg-line w-px h-6 -right-6"></div>
+          </>
         )}
 
         {/* Account */}
         <LocalizedClientLink
           href="/account"
-          className="p-2 text-gray-400 hover:text-gray-500 lg:ml-4"
+          className="p-2 user-icon cursor-pointer lg:ml-4"
         >
           <span className="sr-only">Account</span>
-          <UserIcon className="h-6 w-6" aria-hidden="true" />
+          <Icon.User size={24} color="black" aria-hidden="true" />
         </LocalizedClientLink>
 
         {/* Cart */}
