@@ -75,15 +75,11 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          "Inter",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Ubuntu",
-          "sans-serif",
+          "Lora", "sans-serif",
         ],
+        lora: [
+          "Lora", "serif",
+        ]
       },
       keyframes: {
         ring: {
@@ -171,7 +167,7 @@ module.exports = {
         "slide-in": "slide-in 1.2s cubic-bezier(.41,.73,.51,1.02)",
         leave: "leave 150ms ease-in forwards",
       },
-      
+
     },
   },
   plugins: [require("tailwindcss-radix")(), require('@tailwindcss/aspect-ratio')],

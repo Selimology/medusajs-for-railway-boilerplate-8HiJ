@@ -6,13 +6,13 @@
       "featured": [
         {
           "name": "Bracelet",
-          "href": "#",
+          "href": "/collections/bracelet",
           "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
           "imageAlt": "Models sitting back to back, wearing Basic Tee in black and bone."
         },
         {
           "name": "Necklace",
-          "href": "#",
+          "href": "/collections/necklace",
           "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
           "imageAlt": "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees."
         }
@@ -22,38 +22,38 @@
           "id": "featured",
           "name": "Featured",
           "items": [
-            { "name": "Best Sellers", "href": "/collections/best-sellers" },
-            { "name": "New Arrivals", "href": "/collections/new-arrivals" },
-            { "name": "Gifts For Dad", "href": "/collections/gifts-for-dad" },
-            { "name": "Gifts For Her", "href": "/gifts-for-her" }
+            { "name": "Best Sellers", "href": "/categories/best-sellers" },
+            { "name": "New Arrivals", "href": "/categories/new-arrivals" },
+            { "name": "Gifts For Dad", "href": "/categories/gifts-for-dad" },
+            { "name": "Gifts For Her", "href": "/categories/gifts-for-her" }
           ]
         },
         {
           "id": "personalisation",
           "name": "Personalization",
           "items": [
-            { "name": "Name", "href": "/collections/name" },
-            { "name": "Number", "href": "/collections/number" },
-            { "name": "Initial", "href": "/collections/initial" }
+            { "name": "Name", "href": "/categories/name" },
+            { "name": "Number", "href": "/categories/number" },
+            { "name": "Initial", "href": "/categories/initial" }
           ]
         },
         {
           "id": "gift-recommendations",
           "name": "Gift Recommendations",
           "items": [
-            { "name": "Gifts For Couples", "href": "/collections/gifts-for-couples" },
-            { "name": "Gifts For Him", "href": "/collections/gifts-for-him" },
-            { "name": "Gifts For Mom", "href": "/collections/gifts-for-mom" },
-            { "name": "Editor's Pick", "href": "/collections/editor-pick" }
+            { "name": "Gifts For Couples", "href": "/categories/gifts-for-couples" },
+            { "name": "Gifts For Him", "href": "/categories/gifts-for-him" },
+            { "name": "Gifts For Mom", "href": "/categories/gifts-for-mom" },
+            { "name": "Editor's Pick", "href": "/categories/editor-pick" }
           ]
         }
       ]
     }
   ],
   "pages": [
-    { "name": "Necklace", "href": "/categories/necklaces" },
-    { "name": "Earrings", "href": "/categories/earrings" },
-    { "name": "Cufflinks", "href": "/categories/cufflinks" },
-    { "name": "Rings", "href": "/categories/rings" }
+    { "name": "Necklace", "href": "/collections/necklaces" },
+    { "name": "Earrings", "href": "/collections/earrings" },
+    { "name": "Cufflinks", "href": "/collections/cufflinks" },
+    { "name": "Rings", "href": "/collections/rings" }
   ]
 }

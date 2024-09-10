@@ -17,10 +17,10 @@ export default async function PageLayout(props: { children: React.ReactNode }) {
   return (
     <>
       <div className="flex flex-col min-h-screen">
+        <BannerTop title={topBannerdata.title} />
         <NavContainer navigation={navigationData}>
           <NavbarActionsRight />
         </NavContainer>
-        <BannerTop data={topBannerdata} />
         <main className="flex-1">{props.children}</main>
         <Footer {...footerData} />
       </div>

@@ -1,0 +1,40 @@
+{
+    "title": "Shop By Categories",
+    "categories": [
+        {
+            "id": "1",
+            "handle": "necklace",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+            "name": "Necklaces",
+            "productCount": 76
+        },
+        {
+            "id": "2",
+            "handle": "cufflinks",
+            "imageSrc": "https://res.cloudinary.com/djoki7czl/image/upload/c_thumb,w_200,g_face/v1725315162/il_fullxfull.3814357495_8bhl_1725315161927.jpg",
+            "name": "Earrings",
+            "productCount": 5
+        },
+        {
+            "id": "3",
+            "handle": "bracelet",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+            "name": "Bracelets",
+            "productCount": 14
+        },
+        {
+            "id": "4",
+            "handle": "rings",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+            "name": "Rings",
+            "productCount": 4
+        },
+        {
+            "id": "5",
+            "handle": "earrings",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+            "name": "Earrings",
+            "productCount": 7
+        }
+    ]
+}

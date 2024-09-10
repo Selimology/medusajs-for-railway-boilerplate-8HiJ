@@ -1,5 +1,3 @@
 export interface BannerTopProps {
-    data:{
-        banners: string[]
-    }
+    title: string
 }

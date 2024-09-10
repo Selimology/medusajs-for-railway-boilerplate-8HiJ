@@ -36,7 +36,6 @@ export default function NavContainer({
   const parts = pathname.split("/").filter(Boolean)
   const restOfPath = "/" + parts.slice(1).join("/")
 
-  console.log({ pathname, restOfPath })
   return (
     <>
       <MobileMenu navigation={navigation} open={open} setOpen={setOpen} />

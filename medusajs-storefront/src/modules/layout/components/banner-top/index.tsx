@@ -1,23 +1,19 @@
 import React from "react"
-import Marquee from "react-fast-marquee"
 import { BannerTopProps } from "types/bannertop"
 
-const BannerTop = ({ data }: BannerTopProps) => {
+const BannerTop = ({ title }: BannerTopProps) => {
   return (
-    <div className="banner-top bg-black py-3">
-      <Marquee>
-        {data.banners.map((bannerText, index) => (
-          <React.Fragment key={index}>
-            <div className="text-button-uppercase px-8 text-white">
-              {bannerText}
+    <>
+      <div className="top-nav md:h-[44px] h-[30px] style-one bg-black">
+        <div className="container mx-auto h-full">
+          <div className="top-nav-main flex justify-center h-full">
+            <div className="text-center text-button-uppercase text-white flex items-center">
+              {title}
             </div>
-            {index < data.banners.length - 1 && (
-              <div className="line w-8 h-px bg-white"></div>
-            )}
-          </React.Fragment>
-        ))}
-      </Marquee>
-    </div>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 

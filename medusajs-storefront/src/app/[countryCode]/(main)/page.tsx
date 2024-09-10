@@ -1,6 +1,7 @@
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
 import {
+  getCategoryByHandle,
   getCollectionByHandle,
   getCollectionsList,
   getProductsList,
@@ -26,11 +27,12 @@ import { CountdownProvider } from "@lib/context/countdown-context"
 import flashSaleData from "@lib/data/json/FlashSale.json"
 import LookBook from "@modules/home/components/lookbook"
 import heroSectionData from "@lib/data/json/Hero.json"
-import CollectionProductRail from "@modules/home/components/collection-product-rail/index"
-import CollectionCategoryRail from "@modules/home/components/collection-category-rail"
+import BannerBottom from "@modules/home/components/banner-bottom"
+import ShopByCategories from "@modules/home/components/shop-by-categories"
+import shopByCategoriesData from "@lib/data/json/ShopByCategories.json"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "Home Jewellery | Jewellery GB Shop",
   description:
     "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
 }
@@ -81,7 +83,6 @@ const getCollectionWithHandle = cache(
     targetHandle: string
   ): Promise<ProductCollectionWithPreviews | null> => {
     const collection = await getCollectionByHandle(targetHandle)
-
     if (!collection) {
       return null
     }
@@ -127,6 +128,61 @@ const getMultipleCollectionsWithHandles = cache(
   }
 )
 
+const getCategoryWithHandle = cache(
+  async (
+    countryCode: string,
+    targetHandle: string
+  ): Promise<ProductCollectionWithPreviews | null> => {
+    const { product_categories } = await getCategoryByHandle([targetHandle])
+    if (!product_categories || product_categories.length === 0) {
+      return null
+    }
+
+    const category = product_categories[0]
+
+    const categoryId = category.id
+
+    const { response } = await getProductsList({
+      queryParams: { category_id: [categoryId] },
+      countryCode,
+    })
+
+    category.products = response.products as Product[]
+
+    return category as unknown as ProductCollectionWithPreviews
+  }
+)
+
+const getMultipleCategoriesWithHandles = cache(
+  async (
+    countryCode: string,
+    targetHandles: string[]
+  ): Promise<ProductCollectionWithPreviews[] | null> => {
+    try {
+      const categories = await Promise.all(
+        targetHandles.map((handle) =>
+          getCategoryWithHandle(countryCode, handle)
+        )
+      )
+
+
+      const validCategories = categories.filter(
+        (category) => category !== null
+      ) as ProductCollectionWithPreviews[]
+
+      if (validCategories.length === 0) {
+        return null
+      }
+
+      return validCategories
+    } catch (error) {
+      console.error("Error fetching multiple categories:", error)
+      return null
+    }
+  }
+)
+
+
 export default async function Home({
   params: { countryCode },
 }: {
@@ -135,31 +191,35 @@ export default async function Home({
   const collections = await getCollectionsWithProducts(countryCode)
   const region = await getRegion(countryCode)
 
-  const numberCollection = await getCollectionWithHandle(countryCode, "number")
-
-  const groupedCollection = await getMultipleCollectionsWithHandles(
-    countryCode,
-    ["number", "best-seller", "name"]
-  )
-
-  console.log("groupedCollection", groupedCollection)
   if (!collections || !region) {
     return null
   }
 
   const targetDate = new Date("2024-09-28")
 
+  const bannerBottomData = {
+    banners: [
+      { text: "Get Glowing Skin", icon: "icon-leaves" },
+      { text: "Learn Skincare Tips", icon: "icon-double-leaves" },
+      { text: "Subscribe for Exclusive Offers", icon: "icon-leaves" },
+      // Add more items as needed
+    ],
+    textColor: "text-white",
+    bgLine: "bg-black"
+  }
+
   return (
     <>
       <Hero heroSlides={heroSectionData} />
-
+      <BannerBottom data={bannerBottomData} />
       {/* <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div> */}
-      {/* <CollectionCategoryRail collections={groupedCollection} region={region} /> */}
-      <CollectionProductRail collection={numberCollection} region={region} />
+      {/* <CollectionCategoryRail collections={groupedCategories} region={region} /> */}
+      <ShopByCategories data={shopByCategoriesData} />
+      {/* <CollectionProductRail collection={numberCollection} region={region} /> */}
       <LookBook products={lookbookProductData} />
       <CountdownProvider targetDate={targetDate}>
         <FlashSale data={flashSaleData} />
@@ -169,12 +229,12 @@ export default async function Home({
         data={testimonialData}
         shopLinkdata={testimonialShopLinkData}
       />
-      <SignupBanner data={signupData} />
       <Benefit data={benefitData} />
       <InstagramCarousel
         proofData={instagramProofData}
         instagramHeaderdata={instagramHeaderData}
       />
+      <SignupBanner data={signupData} />
       {/* <ModalNewsletter /> */}
     </>
   )

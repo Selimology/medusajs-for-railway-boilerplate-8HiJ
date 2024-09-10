@@ -26,7 +26,7 @@ Check out [create-medusa-app docs](https://docs.medusajs.com/create-medusa-app) 
 
 ### Overview
 
-The Medusa Next.js Starter is built with:
+The JewelleryGBSShop is built with:
 
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
