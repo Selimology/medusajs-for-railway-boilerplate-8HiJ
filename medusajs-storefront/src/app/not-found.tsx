@@ -24,7 +24,7 @@ export default function NotFound() {
         <NavContainer navigation={navigationData}>
           <NavbarActionsRight />
         </NavContainer>
-        <BannerTop data={topBannerdata} />
+        <BannerTop title={topBannerdata.title} />
         <main className="flex-1">
           <div className="page-not-found md:py-20 py-10 bg-linear ">
             <div className="container">
