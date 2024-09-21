@@ -1,5 +1,5 @@
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import { FaPinterest, FaInstagram, FaFacebook } from "react-icons/fa"
+import { FaPinterest, FaInstagram, FaFacebook , FaWhatsapp} from "react-icons/fa"
 import Link from "next/link"
 import Image from "next/image"
 import { FooterIconProp, FooterProps } from "types/footer"
@@ -7,7 +7,7 @@ import { FooterIconProp, FooterProps } from "types/footer"
 const icons: FooterIconProp = {
   FaFacebook: <FaFacebook height="10" width="10" />,
   FaInstagram: <FaInstagram height="10" width="10" />,
-  FaPinterest: <FaPinterest height="10" width="10" />,
+  FaWhatsapp: <FaWhatsapp height="10" width="10" />,
 }
 
 export default function Footer({

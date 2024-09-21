@@ -4,35 +4,35 @@
         {
             "id": "1",
             "handle": "necklace",
-            "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+            "imageSrc": "https://res.cloudinary.com/djoki7czl/image/upload/v1725315537/il_fullxfull.4579070886_igo2_1725315536871.jpg",
             "name": "Necklaces",
             "productCount": 76
         },
         {
             "id": "2",
             "handle": "cufflinks",
-            "imageSrc": "https://res.cloudinary.com/djoki7czl/image/upload/c_thumb,w_200,g_face/v1725315162/il_fullxfull.3814357495_8bhl_1725315161927.jpg",
-            "name": "Earrings",
+            "imageSrc": "https://res.cloudinary.com/djoki7czl/image/upload/v1725315162/il_fullxfull.3766752970_srrq_1725315161931.jpg",
+            "name": "Cufflinks",
             "productCount": 5
         },
         {
             "id": "3",
             "handle": "bracelet",
-            "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+            "imageSrc": "https://res.cloudinary.com/djoki7czl/image/upload/v1724641087/il_fullxfull.4246473870_rzr8_1724641086539.jpg",
             "name": "Bracelets",
             "productCount": 14
         },
         {
             "id": "4",
             "handle": "rings",
-            "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+            "imageSrc": "https://res.cloudinary.com/djoki7czl/image/upload/v1725020304/il_fullxfull.4681240632_7gfa_1725020303740.jpg",
             "name": "Rings",
             "productCount": 4
         },
         {
             "id": "5",
             "handle": "earrings",
-            "imageSrc": "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+            "imageSrc": "https://res.cloudinary.com/djoki7czl/image/upload/v1725305930/il_fullxfull.3814852611_66g0_1725305930069.jpg",
             "name": "Earrings",
             "productCount": 7
         }

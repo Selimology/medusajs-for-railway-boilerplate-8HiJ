@@ -32,7 +32,7 @@ const LookBookHover = ({ lookbookData }: LookBookHoverProps) => {
             href={product.url}
           >
             <div className="text-title name">{product.name}</div>
-            <div className="price text-center font-bold">${product.price}</div>
+            <div className="price text-center font-bold">From ${product.price}</div>
             <div className="text-center underline mt-1 text-button-uppercase duration-300 text-secondary2 hover:text-black">
               View
             </div>

@@ -11,13 +11,17 @@ export default function CollectionTemplate({
   collection,
   page,
   countryCode,
+  layout
 }: {
   sortBy?: SortOptions
   collection: ProductCollection
   page?: string
   countryCode: string
+  layout?: number
 }) {
   const pageNumber = page ? parseInt(page) : 1
+  const layoutCol = layout ? layout : 4
+
 
   return (
     <div className="flex flex-col small:flex-row small:items-start py-6 content-container">
