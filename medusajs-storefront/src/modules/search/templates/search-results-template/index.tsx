@@ -12,6 +12,7 @@ type SearchResultsTemplateProps = {
   sortBy?: SortOptions
   page?: string
   countryCode: string
+  layout?: number
 }
 
 const SearchResultsTemplate = ({
@@ -20,6 +21,7 @@ const SearchResultsTemplate = ({
   sortBy,
   page,
   countryCode,
+  layout,
 }: SearchResultsTemplateProps) => {
   const pageNumber = page ? parseInt(page) : 1
 
@@ -42,13 +44,14 @@ const SearchResultsTemplate = ({
       <div className="flex flex-col small:flex-row small:items-start p-6">
         {ids.length > 0 ? (
           <>
-            <RefinementList sortBy={sortBy || "created_at"} search />
+            <RefinementList sortBy={sortBy || "created_at"} search layout={layout || 4} />
             <div className="content-container">
               <PaginatedProducts
                 productsIds={ids}
                 sortBy={sortBy}
                 page={pageNumber}
                 countryCode={countryCode}
+                layoutCol={layout || 4}
               />
             </div>
           </>
