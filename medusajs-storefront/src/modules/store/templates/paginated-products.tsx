@@ -19,7 +19,6 @@ export default async function PaginatedProducts({
   categoryId,
   productsIds,
   countryCode,
-  layoutCol,
 }: {
   sortBy?: SortOptions
   page: number
@@ -27,7 +26,6 @@ export default async function PaginatedProducts({
   categoryId?: string
   productsIds?: string[]
   countryCode: string
-  layoutCol: number
 }) {
   const region = await getRegion(countryCode)
 
@@ -64,7 +62,7 @@ export default async function PaginatedProducts({
 
   return (
     <>
-      <ul className={`list-product hide-product-sold grid lg:grid-cols-${layoutCol} sm:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-[20px] mt-7 data-testid="products-list`}>
+      <ul className="grid grid-cols-2 w-full small:grid-cols-3 medium:grid-cols-4 gap-x-6 gap-y-8">
         {products.map((p) => {
           return (
             <li key={p.id}>
