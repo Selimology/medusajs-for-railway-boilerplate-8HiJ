@@ -42,14 +42,14 @@ const Hero = ({ heroSlides }: HeroProp) => {
                       Shop Now
                     </LocalizedClientLink>
                   </div>
-                  <div className={`sub-img absolute left-[300px] top-0 w-full h-full z-[-1]`}>
+                  <div className={`sub-img absolute ${slide.imageClasses} z-0`}>
                     <Image
                       src={slide.imageSrc}
                       width={slide.imageWidth}
                       height={slide.imageHeight}
                       alt={slide.imageAlt}
                       priority={true}
-                      className="w-full h-full object-cover"
+                      className="w-full"
                     />
                   </div>
                 </div>

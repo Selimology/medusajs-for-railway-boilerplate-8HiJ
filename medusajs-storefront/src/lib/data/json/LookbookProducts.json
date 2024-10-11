@@ -1,37 +1,45 @@
 {
-  "mainContent": {
+  "mainContent":{
     "titleText": "Discover the latest collection",
     "buttonText": "Shop Collection",
-    "buttonLink": "/categories/new-arrivals"
+    "buttonLink":"/shop"
   },
   "images": [
     {
-      "id": "1",
-      "imageUrl": "https://res.cloudinary.com/djoki7czl/image/upload/v1725305930/il_fullxfull.3767247356_s8xc_1725305930049.jpg",
-      "alt": "This is a photo of silver peace earring",
+      "id":"1",
+      "imageUrl": "https://anvogue.vercel.app/_next/image?url=%2Fimages%2Fbanner%2Flookbook-jewelry1.png&w=3840&q=75",
+      "alt": "This is a photo of the logo",
       "products": [
         {
           "id": "1",
-          "name": "Silver Peace Earring",
+          "name": "Off-The-Shoulder",
           "price": 32.0,
-          "url": "/products/silver-peace-earring-silver-bird-earring-silver-magnolia-earring-birthday-gift-idea-gift-for-her-mothers-day-present",
-          "dotTop": "35%",
-          "dotLeft": "57%"
+          "url": "/product/default?id=1",
+          "dotTop": "38%",
+          "dotLeft": "45%"
+        },
+        {
+          "id": "2",
+          "name": "Enes Shoulder Necklace",
+          "price": 45.0,
+          "url": "/product/default?id=1",
+          "dotTop": "45%",
+          "dotLeft": "38%"
         }
       ]
     },
     {
-      "id": "2",
-      "imageUrl": "https://res.cloudinary.com/djoki7czl/image/upload/v1725317428/il_fullxfull.5383745233_bgbg_1725317428260.jpg",
-      "alt": "This is a photo of personalized name necklace",
+      "id":"2",
+      "imageUrl": "https://anvogue.vercel.app/_next/image?url=%2Fimages%2Fbanner%2Flookbook-jewelry1.png&w=3840&q=75",
+      "alt": "This is a photo of the logo",
       "products": [
         {
           "id": "3",
-          "name": "Personalized Name Necklace",
-          "price": 20.72,
-          "url": "/product/personalized-name-necklaces-silver-name-necklace-gold-mama-necklace-custom-name-necklace-name-necklace-gift-for-her-mama-mum",
-          "dotTop": "52%",
-          "dotLeft": "60%"
+          "name": "Mesh Shirt",
+          "price": 35.0,
+          "url": "/product/default?id=2",
+          "dotTop": "38%",
+          "dotLeft": "45%"
         }
       ]
     }
